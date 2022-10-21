@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    background: aqua;
+    width: 100vw;
+    height: 30px;
+}
+
+.container {
+    border-style: solid;
+    padding: 10px;
+    margin: auto;
+    width: 40%;
+    background-color: rgb(238, 199, 226);
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: black; */
+    height: 1px;
+     background-color: rgb(112, 65, 83);
+    color: white;
+}
+
+
+body>table {
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table.list {
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even),
+table.list thead>tr {
+    background-color: #9de2a3;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+.validation-error {
+    color: red;
+    margin-left: 5px;
+}
+
+.delbtn{
+    width: 70px;
+    height: 26px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: rgb(112, 65, 83);
+    color: white;
+}
+.hide {
+    display: none;
+}

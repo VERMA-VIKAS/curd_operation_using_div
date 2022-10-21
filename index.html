@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-oprations</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="main-box">
+    <div class="heading">
+        <strong>CRUD_OPRATIONS</strong>
+    </div>
+    <div id="container">
+        <div>
+            Full Name* <div class="validation-error hide" id="fullNameValidationError">This field is
+                required.</div>
+            <input type="text" name="fullName" id="fullName" placeholder="Please enter your name" pattern='[A-Za-z \s]*'
+                title="Only Allows Characters">
+        </div>
+        <div>
+            Adress
+            <input type="text" name="adress" id="adress" placeholder="Please enter your Adress">
+        </div>
+
+        <div>
+            Country
+            <input type="text" name="country" id="country" placeholder="Please enter your Counter">
+        </div>
+        <div>
+            Email
+            <input type="email" name="email" id="email" placeholder="Please enter your Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
+        <div>
+            Mobile number
+            <input type="tel" name="mobile" id="mobile" placeholder="Please enter your mobile number" pattern='[0-9]*'
+                title="Only numbers are allowed">
+        </div>
+        <div class="btn">
+            <div class="submit" >
+                <button onclick="done()" id="submit">Submit</button>
+            </div>
+            <div class="reset">
+                <button onclick="resetForm()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="table">
+        <table class="list" id="List">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" name="chk" onchange="checkAll(this)"/></th>
+                    <th>Full Name</th> 
+                    <th>Adress</th>
+                    <th>Country</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+        <input type="button" value="Delete" onclick="deleteRow('List')" class="delbtn" />
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
